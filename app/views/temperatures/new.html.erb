@@ -1,0 +1,11 @@
+<% content_for :title, "New temperature" %>
+
+<h1>New temperature</h1>
+
+<%= render "form", temperature: @temperature %>
+
+<br>
+
+<div>
+  <%= link_to "Back to temperatures", temperatures_path %>
+</div>
