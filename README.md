@@ -1,10 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
+This is a small Rails server used to log temperatures through a BME280 on a Raspberry PI.
 * Ruby version
 
 * System dependencies

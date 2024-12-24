@@ -6,10 +6,10 @@
 
 <div id="temperatures">
   <% @temperatures.each do |temperature| %>
-    <%= render temperature %>
     <p>
-      <%= link_to "Show this temperature", temperature %>
+      <%= temperature.value %>°C <%= time_ago_in_words(temperature.created_at) %> ago <%= link_to "e", temperature %>
     </p>
+
   <% end %>
 </div>
 

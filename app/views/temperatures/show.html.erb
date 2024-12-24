@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @temperature %>
+<%= @temperature.value %> <%= @temperature.created_at %> 
 
 <div>
   <%= link_to "Edit this temperature", edit_temperature_path(@temperature) %> |

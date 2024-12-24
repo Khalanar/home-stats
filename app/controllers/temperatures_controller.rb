@@ -4,7 +4,7 @@ class TemperaturesController < ApplicationController
   before_action :set_temperature, only: %i[ show edit update destroy ]
 
   def index
-    @temperatures = Temperature.all
+    @temperatures = Temperature.order(created_at: :desc)
   end
 
   def show
